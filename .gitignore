@@ -6,6 +6,9 @@ web/pimcore/
 web/plugins/
 web/website/config/*
 !web/website/config/.gitkeep
+!web/website/config/container.php
+!web/website/config/features.php
+!web/website/config/startup.php
 web/website/controllers/DefaultController.php
 web/website/controllers/Web2printController.php
 web/website/lib/Website/Controller/Action.php
