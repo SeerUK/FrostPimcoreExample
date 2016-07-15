@@ -1,9 +1,5 @@
-var/*
-!var/config/
-var/config/*
-!var/config/startup.php
+var
 vendor
-web/website/var/
 
 # Ignore files installed by Composer
 web/pimcore/

@@ -1,0 +1,40 @@
+version: "2"
+
+services:
+  web:
+    image: seeruk/docker-nginx:latest
+    environment:
+      NGINX_TEMPLATE: default-php-pimcore-composer
+    ports:
+    - 80:8080
+    - 443:4430
+    volumes:
+    - .:/opt/www
+    links:
+    - php:php.docker
+
+  php:
+    image: seeruk/docker-php-fpm:7.0-dev
+    volumes:
+    - .:/opt/www
+    links:
+    - cache:cache.docker
+    - db:db.docker
+
+  db:
+    image: seeruk/docker-mysql:latest
+    environment:
+      MYSQL_DATABASE: frost
+      MYSQL_USER: frost
+      MYSQL_PASS: frost
+    ports:
+    - 3306:3306
+    volumes:
+    - dbdata:/var/lib/mysql
+
+  cache:
+    image: redis:latest
+
+volumes:
+  dbdata:
+    driver: local
