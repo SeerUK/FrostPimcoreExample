@@ -8,10 +8,15 @@ web/website/var/
 # Ignore files installed by Composer
 web/pimcore/
 web/plugins/
+web/website/config/*
+!web/website/config/.gitkeep
 web/website/controllers/DefaultController.php
+web/website/controllers/Web2printController.php
 web/website/lib/Website/Controller/Action.php
 web/website/lib/Website/Tool/Text.php
 web/website/views/scripts/default/default.php
+web/website/views/scripts/web2print/container.php
+web/website/views/scripts/web2print/default.php
 web/index.php
 .htaccess
 composer.phar
