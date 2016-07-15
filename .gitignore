@@ -1,6 +1,19 @@
-composer.phar
-/vendor/
+var/*
+!var/config/
+var/config/*
+!var/config/startup.php
+vendor
+web/website/var/
 
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Ignore files installed by Composer
+web/pimcore/
+web/plugins/
+web/website/controllers/DefaultController.php
+web/website/lib/Website/Controller/Action.php
+web/website/lib/Website/Tool/Text.php
+web/website/views/scripts/default/default.php
+web/index.php
+.htaccess
+composer.phar
+migrations.yml
+migrations-db.php

@@ -1,0 +1,99 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "bea2fef14b2e1835acd215744f813032",
+    "content-hash": "09bcc0c2e85941bbcea44cd8cbd90e80",
+    "packages": [
+        {
+            "name": "byng/pimcore-composer-installer",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/byng-systems/pimcore-composer-installer.git",
+                "reference": "5c0aba4dea0063e80c557b6e06ad79c963769637"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byng-systems/pimcore-composer-installer/zipball/5c0aba4dea0063e80c557b6e06ad79c963769637",
+                "reference": "5c0aba4dea0063e80c557b6e06ad79c963769637",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "class": "Byng\\Pimcore\\Composer\\Installer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Byng\\Pimcore\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elliot Wright",
+                    "email": "elliot@elliotwright.co"
+                }
+            ],
+            "time": "2016-05-06 08:30:08"
+        },
+        {
+            "name": "seeruk/frost",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SeerUK/Frost.git",
+                "reference": "db5dcc01ea3f9369d1dad6b6de17387b7ea0857d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SeerUK/Frost/zipball/db5dcc01ea3f9369d1dad6b6de17387b7ea0857d",
+                "reference": "db5dcc01ea3f9369d1dad6b6de17387b7ea0857d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.4.x"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SeerUK\\Frost\\": "src/",
+                    "SeerUK\\Frost\\Test\\": "test/"
+                },
+                "exclude-from-classmap": [
+                    "test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elliot Wright",
+                    "email": "hello@elliotdwright.com"
+                }
+            ],
+            "description": "A feature toggle decision library for PHP.",
+            "time": "2016-06-10 16:09:01"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0.0"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,29 @@
+{
+    "name": "seeruk/frost-pimcore-example",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elliot Wright",
+            "email": "wright.elliot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "byng/pimcore-composer-installer": "^3.0",
+        "seeruk/frost": "^0.1.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Byng\\Pimcore\\Composer\\Installer::install"
+        ],
+        "post-update-cmd": [
+            "Byng\\Pimcore\\Composer\\Installer::install"
+        ]
+    },
+    "config": {
+        "document-root-path": "./web",
+        "pimcore-version": "3.1.1",
+        "project-root-path": "./"
+    }
+}
